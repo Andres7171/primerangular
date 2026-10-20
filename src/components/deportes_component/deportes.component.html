@@ -1,0 +1,19 @@
+<h1>Directivas Deportes</h1>
+<h3>Numero de deportes:{{ sports.length }}</h3>
+
+<ul>
+  @for (num of numeros; track num) {
+    <li [ngClass]="{par:  num % 2 == 0,impar:num%2==1 }">
+      {{ num }}
+    </li>
+  }
+</ul>
+
+@for (sport of sports; track sport) {
+    <p>{{sport}}</p>
+}
+
+<ng-container *ngTemplateOutlet="plantilla"></ng-container>
+<ng-template #plantilla>
+  <h1 style="color: blue">Esto es una pnatilla HTML con mucho codigo...</h1>
+</ng-template>

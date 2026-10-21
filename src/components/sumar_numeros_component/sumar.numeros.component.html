@@ -1,0 +1,11 @@
+<h1>Formulario con Object</h1>
+<form #sumarForm="ngForm" (ngSubmit)="sumarNumeros()" >
+    <label for="">Numero 1</label>
+    <input type="text" #cajaNumero1>
+
+    <label for="">Numero 2</label>
+    <input type="text" #cajaNumero2>
+    <button>Sumar</button>
+</form>
+
+<h2 style="color: blue;">La suma es {{suma}}</h2>

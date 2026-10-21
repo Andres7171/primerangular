@@ -24,7 +24,7 @@ export class FormsBindingComponent {
     };
   }
 
-  recibirDatos(): void {
+  public recibirDatos(): void {
     this.mensaje = 'Datos recibidos!!!';
   }
 }

@@ -1,0 +1,12 @@
+<h1>Tabla MUltiplicar</h1>
+<form #multiplicarFomr="ngForm" (ngSubmit)="recibirNumero()">
+  <label for="">Numero</label>
+  <input type="number" #cajaNumero />
+  <button>Enviar</button>
+</form>
+
+<ul>
+  @for (res of resultados; track res) {
+    <li>{{ res }}</li>
+  }
+</ul>

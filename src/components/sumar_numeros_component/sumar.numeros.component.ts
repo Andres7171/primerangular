@@ -8,13 +8,11 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class SumarNumerosComponent {
   public suma: number;
   
-  @ViewChild('cajaNumero1') cajaNumero1: ElementRef;
-  @ViewChild('cajaNumero2') cajaNumero2: ElementRef;
+  @ViewChild('cajaNumero1') cajaNumero1!: ElementRef;
+  @ViewChild('cajaNumero2') cajaNumero2!: ElementRef;
 
   constructor() {
     this.suma = 0;
-    this.cajaNumero1 = new ElementRef(0);
-    this.cajaNumero2 = new ElementRef(0);
   }
 
   sumarNumeros(): void {
